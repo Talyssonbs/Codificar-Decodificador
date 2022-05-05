@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="PT-BR">
 
 <head>
@@ -12,19 +11,38 @@
 
 <body>
     <form>
-        <div>
-            <label>FRASE</label>
-            <input>
-        </div>
-        <select id="OPÇÕES">
-            <option value="Cifra">Cifra de César</option>
-            <option value="Base">Base64</option>
-        </select>
-        <div>
-            <label>
-                <input name="Escolha" type="radio"> Codificar
-                <input name="Escolha" type="radio"> Decodificar
-            </label>
+        <h1 class="titulo">CODIFICAR E DESVENDAR</h1>
+        <div class="Block">
+            <div>
+                <textarea id="frase" rows="10" cols="50" placeholder="Insira sua Frase" class="frase"></textarea>
+            </div>
+            <select class="selecione" id="opçoes">
+                <option id="cifrad" value="1">Cifra de César</option>
+                <option value="2">Base64</option>
+            </select>
+            <div id="inclemento" class="inclemento">
+                <p class="detalhe">Escolha um Passo</p>
+                <input id="qT" type="number">
+            </div>
+            <div class="radio" id="radio">
+                <label class="bots">
+                    <input id="codificar" name="Escolha" type="radio">
+                    Codificar
+                    <input id="decodificar" name="Escolha" type="radio">
+                    Decodificar
+                    <div>
+
+                    </div>
+                </label>
+                <div>
+                    <label></label> <br>
+                    <textarea class="frase" rows="10" cols="50" readonly id="resultado"
+                        placeholder="Seu resultado"></textarea>
+                </div>
+            </div>
+            <div id="btn" class="btn">
+
+            </div>
         </div>
     </form>
     <script src="./index.js"></script>
